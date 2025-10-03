@@ -53,15 +53,16 @@ ASGI_APPLICATION = 'backend.asgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('MYSQL_DATABASE', 'tienda'),
-        'USER': os.getenv('MYSQL_USER', 'tu_usuario'),
-        'PASSWORD': os.getenv('MYSQL_PASSWORD', 'tu_password'),
-        'HOST': os.getenv('MYSQL_HOST', '127.0.0.1'),
-        'PORT': os.getenv('MYSQL_PORT', '3306'),
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-            'use_unicode': True,
-        },
+        # 'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tienda',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        # 'OPTIONS': {
+        #     'charset': 'utf8',
+        #     'use_unicode': True,
+        # },
     }
 }
 

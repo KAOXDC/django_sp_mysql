@@ -3,3 +3,4 @@ djangorestframework
 mysqlclient
 PyMySQL
 pytz
+psycopg2
